@@ -5,5 +5,5 @@ Este archivo se llenará con el modelo lógico detallado:
 - Normalización.  
 - Relaciones entre tablas.  
 
-👉 Pendiente: agregar diagrama lógico con software de modelado.  
+ Pendiente: agregar diagrama lógico con software de modelado.  
 
