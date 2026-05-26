@@ -1,16 +1,12 @@
-# Modelo Conceptual
+# 🗺️ Modelo Conceptual del Sistema
 
-Entidades principales:  
-- Huésped  
-- Reserva  
-- Habitación  
-- Consumo  
-- Pago  
-- Caja  
+Diagrama conceptual de alto nivel que identifica las entidades principales del Glamping y sus relaciones de negocio.
 
-Relaciones:  
-- Un huésped puede tener varias reservas.  
-- Una reserva corresponde a una habitación.  
-- Un huésped puede generar múltiples consumos.  
-- Un pago está asociado a una reserva.  
-
+```mermaid
+erDiagram
+    HUESPED ||--o{ RESERVA : "realiza"
+    DOMO ||--o{ RESERVA : "es_asignado"
+    TIPO-DOMO ||--o{ DOMO : "clasifica"
+    RESERVA ||--o{ PAGO : "registra"
+    RESERVA ||--o{ REGISTRO-ACTIVIDAD : "contrata"
+    ACTIVIDAD-AVENTURE ||--o{ REGISTRO-ACTIVIDAD : "incluye"
