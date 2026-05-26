@@ -48,6 +48,22 @@ SELECT
     LIMIT 12;
 
 [AQUÍ_IMAGEN_3]
+* **Integrante Responsable:** Juan Manuel Ruiz García
+* **Objeto Evaluado:** Consulta con JOIN de más de 5 tablas (Involucra 7 tablas: huesped, reserva, domo, tipo_domo, registro_actividad, actividad_aventure, pago).
+* **Propósito del Negocio:** Consolidar el reporte gerencial de cuentas por estancia de huéspedes, discriminando costos de alojamiento, consumos de actividades de aventura y estado de transacciones financieras.
+* **Resultado Esperado:** Tabla relacional ordenada con un límite estricto de 12 registros de prueba transaccional.
 <img width="1911" height="1077" alt="evidencia-reporte" src="https://github.com/user-attachments/assets/1decf907-229c-4fd1-b87a-a56f1e98aab4" />
 
+---
+
+## 4. Validación de Objetos Programados Libres (Por Integrante)
+Para dar cumplimiento al alcance individual de objetos SQL en el servidor (Sección 7.6 de la guía), se detalla la ubicación de los elementos lógicos desarrollados:
+
+* **Integrante Responsable:** Juan Manuel Ruiz García
+* **Trigger Implementado:** `trg_actualizar_precio_actividad` (Controla el cálculo automático de tarifas en la tabla de registros de aventura).
+  * *Ubicación del código:* `project-bd/liquibase/ddl/triggers/`
+* **Procedure Implementado:** `sp_registrar_pago_completo` (Automatiza la inserción segura de transacciones financieras).
+  * *Ubicación del código:* `project-bd/liquibase/ddl/procedures/`
+* **Function Implementada:** `fn_calcular_dias_estancia` (Determina la diferencia de jornadas operacionales entre Check-In y Check-Out).
+  * *Ubicación del código:* `project-bd/liquibase/ddl/functions/`
 
