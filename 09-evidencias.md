@@ -14,7 +14,7 @@ Para demostrar el correcto despliegue del entorno contenerizado, se verifica el 
 ## 2. Validación de Volumetría (Conteo de Registros)
 Para comprobar que la inyección masiva de datos a través de Liquibase se ejecutó de forma correcta, se realiza un conteo general sobre la tabla central de operaciones:
 
-```sql
+sql
 hotel_db=# SELECT COUNT(*) FROM reserva;
  count 
 -------
